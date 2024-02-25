@@ -1,0 +1,129 @@
+.world {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6px;
+    background-color: rgb(35, 39, 48);
+}
+
+body {
+    height: 100vh;
+    height: 100%;
+    margin: 0;
+    /* background-image: url("pic/רקע.jpg"); */
+    background-size: cover;
+    background-color: rgba(35, 39, 48);
+    direction: rtl;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.con {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4% 0;
+
+}
+
+
+
+.con .galery {
+    width: 20%;
+    float: right;
+    margin: 10px 20px 30px;
+    /* height: 250px; */
+    overflow: hidden;
+    outline: 2px solid white;
+    outline-offset: -12px;
+    box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgb(35, 39, 48);
+}
+
+.con .galery .images {
+    height: 300px;
+    position: relative;
+    /* מיקום יחסי */
+    opacity: 0.60;
+    transition: 0.4s ease-out;
+    display: flex;
+}
+
+.con .galery .images img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    height: 129%;
+    /* width: auto; */
+    transform: translate(-50%, -50%);
+    /* backface-visibility: hidden; */
+
+}
+
+.footer{
+    position: sticky;
+    bottom: 0;
+}
+.con .galery .images span {
+    position: absolute;
+    z-index: 2;
+    top: calc(150px - 20px);
+    left: 0;
+    right: 0;
+    padding: 10px 50px;
+    margin: 0 45px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+
+}
+
+.con .galery .images:hover {
+    backface-visibility: hidden;
+    transform: scale(1.15, 1.15);
+    opacity: 1;
+}
+
+.con .galery .images:hover span {
+    opacity: 0;
+}
+.footer{
+    display: inline-block;
+    width: 100% !important;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+
+@media(max-width:850px) {
+  
+    .con .galery {
+        width: 40%;
+        margin-right: 6%;
+
+    }
+}
+
+@media(max-width:600px) {
+    .con .galery {
+        width:65%;
+        margin-right: 15%;
+    }
+    .world{
+        display: none;
+    }
+}
+

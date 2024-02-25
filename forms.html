@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.108.0">
+  <title>טופס הרשמה</title>
+  
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/allNoPic.css">
+        <link rel="stylesheet" href="css/allNoPic.css">
+
+
+</head>
+
+<body>
+  <header class="p-3 text-bg-dark nav1" style="direction: ltr; background-color:rgb(36, 43, 59) !important;">
+    <div class="container">
+        <div class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <div class="logo">
+                <img src="pic/FishofAndKenzi2.png" alt="Esty Logo" style="width: 200px;">
+            </div>
+            <ul class="links nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" id="myBtn" class="nav-link px-2 text-white">צור קשר</a></li>
+              <li><a href="forms.html" class="thisPage nav-link px-2 text-white">טופס הרשמה</a></li>
+                <li><a href="price.html" class=" nav-link px-2 text-white">מחירון</a></li>
+                <li><a href="galery.html" class="nav-link px-2 text-white">גלריה</a></li>
+                <!-- <li><a href="#meet" class="nav-link px-2 text-white">אודות</a></li> -->
+                <li><a href="index.html" class=" nav-link px-2 text-white">דף הבית</a></li>
+            </ul>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">הרשמה</button>
+                <button type="button" class="btn btn-warning">כניסה</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <div class="container input col-lg-10">
+    <main>
+      <div class="py-5 text-right">
+        <img src="pic/symbol/61-camera-lineal.gif" alt="camera" style="width:120px">
+        <h2>מצטלם להיות בקשר</h2>
+        <p class="lead">אנא מלאו פרטים מדוייקים</p>
+      </div>
+      <div class="col-md-7 col-lg-5">
+        <h4 class="mb-3">פרטים אישיים</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">שם </label>
+              <input type="text" class="form-control" id="firstName" placeholder="שם פרטי ושם משפחה" value="" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label">טלפון </label>
+              <input type="text" class="form-control" id="phone" placeholder="" value="" required>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="email" class="form-label"> אימייל <span class="text-muted">(אופציונלי)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+            <div class="col-sm-6">
+              <label for="place" class="form-label">מיקום</label>
+              <select class="form-select" id="country" required>
+                <option value="">סטודיו</option>
+                <option>חוץ</option>
+                <option> לייף סטייל צילום בבית שלך</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label class="form-label">תאריך </label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="col-6">
+              <label class="form-label">שעה שנוחה לך... </label>
+              <input type="time" class="form-control" id="time">
+            </div>
+
+
+
+            <hr class="my-4">
+
+            <h4 class="mb-3">החבילה שלי :) </h4>
+
+            <div class="my-3">
+
+              <div>
+                <input name="PhotographyPackage" type="radio" class="form-check-input" id="package1" checked required>
+                <label for="package1" class="form-check-label">חבילה מפנקת 2950 ש"ח</label>
+              </div>
+              <div>
+                <input name="PhotographyPackage" type="radio" class="form-check-input" id="package2" required>
+                <label for="package2" class="form-check-label"> חבילה פופולרית 2150 ש"ח</label>
+              </div>
+              <div>
+                <input name="PhotographyPackage" type="radio" class="form-check-input" id="package3" required>
+                <label for="package3" class="form-check-label"> חבילה לפי שעה 750 ש"ח </label>
+              </div>
+              <div>
+                <input name="PhotographyPackage" type="radio" class="form-check-input" id="package4" required>
+                <label for="package4" class="form-check-label"> חבילה לניו בורן 2950 / 1950 ש"ח </label>
+              </div>
+            </div>
+            <hr class="my-4">
+
+            <div>
+              <input type="checkbox" class="form-check-input" id="cancle">
+              <label for="cancle" class="form-check-label"> ידוע לי כי אם תבוטל ההזמנה יגבה תשלום של 500 ש"ח </label>
+            </div>
+
+            <div>
+              <input type="checkbox" class="form-check-input" id="Copyright">
+              <label for="Copyright" class="form-check-label"> ללקוח יש זכות שימוש אישית ולא למטרות מסחריות. </label>
+
+            </div>
+
+            <hr class="my-4">
+
+            <button class="w-100 btn btn-primary btn-lg button" type="submit">מצטלם לי להצטרף :) </button>
+        </form>
+      </div>
+  </div>
+  </main>
+
+  </div>
+  <footer class="footer">
+    <div class="conect">
+        <div class="conect2">
+            <div class="ContactInformation">
+                <img src="pic/symbol/e-mail.png" alt="camera">
+            </div>
+            <div class="ContactInformation">
+                <img src="pic/symbol/camera1.png" alt="camera">
+            </div>
+            <div class="ContactInformation">
+                <img src="pic/symbol/phone.png" alt="phone">
+            </div>
+        </div>
+        <p id="conect">  Esty Fishof: 052-7159133 | Sara Kenzi: 052-7676896 &copy;</p>
+    </div>
+</footer>
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+  <span class="close">&times;</span>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
+
+</body>
+
+</html>
